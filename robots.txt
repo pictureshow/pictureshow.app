@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pictureshow.app/sitemap.xml
