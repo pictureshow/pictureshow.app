@@ -18,31 +18,29 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<style>
-:root { --bg: #10131c; --card: #171b27; --ink: #e6e9f2; --muted: #a3abc0; --accent: #b8c4ff; --line: #2a3042; }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink);
-  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-main { max-width: 42rem; margin: 0 auto; padding: 48px 16px 64px; }
-a { color: var(--accent); }
-h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 8px; }
-h2 { font-size: 1.25rem; margin: 32px 0 8px; }
-.mark { display: block; width: 72px; height: 72px; border-radius: 16px; margin-bottom: 20px; }
-.lede { color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
-ul { padding-left: 1.2rem; }
-li { margin: 4px 0; }
-footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
-</style>
+<meta name="theme-color" content="#10131c">
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
-<main>
-<img class="mark" src="/icon-192.png" alt="">
+<main class="wrap">
+<section class="hero">
+<div>
+<img class="mark" src="/icon-192.png" alt="" width="64" height="64">
 <h1>Pictureshow</h1>
 <p class="lede">A free, open-source Jellyfin client for Android TV, made for the remote.</p>
-<p>Pictureshow plays the movies and shows on your own Jellyfin server on your Android TV. It has no ads and no
+<p class="intro">Pictureshow plays the movies and shows on your own Jellyfin server on your Android TV. It has no ads and no
 tracking, and it talks only to your server. It's a third-party app, not an official Jellyfin client, and you need
 your own Jellyfin server to use it.</p>
-<h2>What it does</h2>
+<a class="button" href="https://github.com/pictureshow/pictureshow">Source code on GitHub</a>
+</div>
+<figure class="screen">
+<img src="/img/home-960.jpg" srcset="/img/home-960.jpg 960w, /img/home-1600.jpg 1600w" sizes="(min-width: 960px) 40rem, 100vw"
+  width="1600" height="900" alt="Pictureshow's home screen on a TV, with Tears of Steel, Sintel and Spring in Continue watching">
+<figcaption>The home screen. Films: Blender Foundation open movies (CC BY).</figcaption>
+</figure>
+</section>
+<section class="features" aria-labelledby="what">
+<h2 id="what">What it does</h2>
 <ul>
 <li>Finds Jellyfin servers on your home network, or connects to any address you type</li>
 <li>Sign in with a password or Quick Connect, and keep several users and servers on one TV</li>
@@ -51,11 +49,13 @@ your own Jellyfin server to use it.</p>
 <li>Plays files directly when your TV can, so the server only converts what it has to</li>
 <li>Scrubbing previews, chapters, the next episode, and skip intro and credits when your server marks them</li>
 </ul>
-<p>Pictureshow is built with AI assistance and tested on real Android TV hardware.</p>
-
-<footer>Pictureshow is made by Legitimate LLC. Questions: <a href="mailto:info@legitimateapps.com">info@legitimateapps.com</a>
-· <a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></footer>
+<p class="note">Pictureshow is built with AI assistance and tested on real Android TV hardware.</p>
+</section>
 </main>
+<footer class="foot"><div class="wrap">
+<nav aria-label="Site"><a href="/" aria-current="page">Home</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="https://github.com/pictureshow/pictureshow">Source code</a></nav>
+<p>Pictureshow is made by Legitimate LLC. Questions: <a href="mailto:info@legitimateapps.com">info@legitimateapps.com</a></p>
+</div></footer>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "472abf4df27d4ce8a2143633f538b3cb"}'></script>
 </body>
 </html>

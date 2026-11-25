@@ -18,24 +18,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<style>
-:root { --bg: #10131c; --card: #171b27; --ink: #e6e9f2; --muted: #a3abc0; --accent: #b8c4ff; --line: #2a3042; }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink);
-  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-main { max-width: 42rem; margin: 0 auto; padding: 48px 16px 64px; }
-a { color: var(--accent); }
-h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 8px; }
-h2 { font-size: 1.25rem; margin: 32px 0 8px; }
-.mark { display: block; width: 72px; height: 72px; border-radius: 16px; margin-bottom: 20px; }
-.lede { color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
-ul { padding-left: 1.2rem; }
-li { margin: 4px 0; }
-footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
-</style>
+<meta name="theme-color" content="#10131c">
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
-<main>
+<header class="bar"><div class="wrap narrow"><a class="brand" href="/"><img src="/icon-192.png" alt="" width="28" height="28">Pictureshow</a></div></header>
+<main class="wrap narrow"><article class="doc">
 <h1>Privacy policy</h1>
 <p>Pictureshow is a Jellyfin client for Android TV, published by Legitimate LLC. This policy covers the Pictureshow app and
 the pictureshow.app website. It was last changed on 9 November 2026.</p>
@@ -78,9 +66,11 @@ how long the page took to load. The app doesn't use it.</p>
 <h2>Changes and contact</h2>
 <p>If the app ever starts sending anything new, this policy will change first, and the change will be listed in the
 release notes. Questions: info@legitimateapps.com.</p>
-<footer>Pictureshow is made by Legitimate LLC. Questions: <a href="mailto:info@legitimateapps.com">info@legitimateapps.com</a>
-· <a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></footer>
-</main>
+</article></main>
+<footer class="foot"><div class="wrap narrow">
+<nav aria-label="Site"><a href="/">Home</a><a href="/privacy/" aria-current="page">Privacy</a><a href="/terms/">Terms</a><a href="https://github.com/pictureshow/pictureshow">Source code</a></nav>
+<p>Pictureshow is made by Legitimate LLC. Questions: <a href="mailto:info@legitimateapps.com">info@legitimateapps.com</a></p>
+</div></footer>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "472abf4df27d4ce8a2143633f538b3cb"}'></script>
 </body>
 </html>
